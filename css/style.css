@@ -1,0 +1,382 @@
+html {
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom,#42180f, #360f42, #034382, #0067c2, #0077ff);
+    background-attachment: fixed;
+  }
+  
+  .titulo {
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    justify-content: space-evenly;
+    font-weight: 900;
+  }
+
+  .topnav {
+    overflow: hidden;
+    width: 40%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 1rem;
+  }
+  
+  .topnav a {
+    color: #ddd;
+    text-align: center;
+    padding: 0.6rem;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .caja {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 2.3rem auto;
+  }
+
+  .menu-lateral {
+    width: 15%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-box-shadow: 5px 6px 50px 4px #9a5330; 
+    box-shadow: 5px 6px 50px 4px #9a5330;
+    background: #ffffff00;
+    border-radius: 2rem;
+  }
+
+  .inf-title-sidemenu {
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .lista-inf-text {
+    font-size: 1.5rem;
+    text-justify: inter-word;
+    color: #fff;
+  }
+
+  .foto {
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 2rem;
+  }
+
+  .iconos {
+    margin-top: 1rem;
+    color: #000000;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .iconos a {
+    color: #000000;
+  }
+
+  .inf-container-padre {
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 5px 6px 50px 4px #9a5330; 
+    box-shadow: 5px 6px 50px 4px #9a5330;
+    background: #ffffff00;
+    border-radius: 2rem;
+  }
+
+  .inf-container-padre span {
+    color: #fff;
+  }
+
+  .inf-container {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 2.2rem;
+  }
+
+  .inf-title {
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
+
+  .inf-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #fff;
+  }
+  
+  .foto-cuerpo {
+    height: 30rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+  }
+
+  .formulario {
+    height: 30rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #a8eb12;
+    border-radius: 0.7rem;
+}
+
+.formulario input{
+    border: none;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    width: 80%;
+}
+
+.formulario textarea{
+  border: none;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  width: 80%;
+}
+
+.clickeable {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.tarjeta {
+  background-color: #a8eb12;
+  display: flex;
+  height: 10rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:0.2rem;
+  border-radius: 0.7rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tarjeta button {
+  border-radius: 0.7rem;
+  padding: 1rem;
+  border-style: none;
+}
+
+@media screen and (min-width:0px) and (max-width:576px){
+  .menu-oculto {
+    display:none !important;
+  }
+  .topnav {
+    width: 10%;
+  }
+  .topnav a {
+    font-size: 1.5rem;
+  }
+  .titulo {
+    font-size: 1.5rem;
+    flex-direction: row-reverse;
+  }
+  .inf-title-sidemenu {
+    font-size: 1rem;
+  }
+  .menu-lateral {
+    display:none;
+  } 
+  .lista-inf-text {
+    font-size: 0.8rem;
+  }
+  .inf-title span{
+    font-size: 2rem;
+   }
+   .titulo span {
+    font-size: 1rem;
+   }
+   .tarjeta button {
+    font-size: 80%;
+   }
+   .tarjeta a {
+    font-size: 1.5rem;
+   }
+}
+
+
+
+
+@media screen and (min-width:577px) and (max-width:767px){
+  .menu-oculto {
+    display:none !important;
+  }
+  .menu-lateral {
+  display:none;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 7rem;
+}
+
+  .topnav {
+    width: 10%;
+  }
+
+  .topnav a {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    flex-direction: row-reverse;
+  }
+
+  .inf-title-sidemenu {
+    font-size: 1rem;
+  }
+
+  .lista-inf-text {
+    font-size: 0.8rem;
+  }
+  .inf-title span{
+    font-size: 3rem;
+   }
+   .tarjeta button {
+    font-size: 40%;
+   }
+   .tarjeta a {
+    font-size: 2.8rem;
+   }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+  #hamburguesa {
+      display:none;
+  }
+
+  .topnav a {
+    font-size: 1rem;
+  }
+  .tarjeta{
+    width: 100%;
+    height: 7rem;
+}
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .inf-title-sidemenu {
+    font-size: 1rem;
+  }
+
+  .lista-inf-text {
+    font-size: 0.8rem;
+  }
+  .tarjeta button {
+    font-size: 70%;
+   }
+   .tarjeta a {
+    font-size: 2.8rem;
+   }
+}
+
+
+@media screen and (min-width:992px) and (max-width: 1199px){
+  #hamburguesa {
+      display:none;
+  }
+  .tarjeta{
+    height: 8rem;
+}
+  .topnav a {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .inf-title-sidemenu {
+    font-size: 1.4rem;
+  }
+
+  .lista-inf-text {
+    font-size: 1rem;
+  }
+  .tarjeta a {
+    font-size: 2.8rem;
+   }
+
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px){ 
+  #hamburguesa {
+      display:none;
+  }
+  .tarjeta{
+    height: 8rem;
+}
+  .inf-title-sidemenu {
+    font-size: 1.7rem;
+  }
+
+  .lista-inf-text {
+    font-size: 1.3rem;
+  }
+
+  .topnav a {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+  
+}
+@media screen and (min-width:1400px) {
+  #hamburguesa {
+      display:none;
+  }
+  
+}
