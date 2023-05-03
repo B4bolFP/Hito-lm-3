@@ -1,72 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <title>Home</title>
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Hito individual, Lenguaje de marcas</h1>
+    </div>
 
-        <div class="titulo">
-            <span>Hito Grupal</span>
-
-            <div class="topnav">
-                <a class="active menu-oculto" href="index.html">Inicio</a>
-                <a class="menu-oculto" href="encuesta2.html">encuesta 1</a>
-                <a class="menu-oculto" href="encuesta1.html">encuesta 2</a>
-                <a class="menu-oculto" href="encuesta3.html">encuesta 3</a>
-                <i id="hamburguesa" class="fa-solid fa-bars"></i>
-            </div>
+    <div class="body-container">
+        <div class="body-section-container">
+            <section>
+                <h2>Introducción</h2>
+                <p>Introduccion a los terminos programacion orientada a objetos (POO) asi como la programacion orientada a eventos (POE) tambien se explicara que es la programacion procedimental.</p>
+            </section>
+            
+            <section>
+                <h2>Programación orientada a eventos.</h2>
+                <p>La programación orientada a eventos (POE) es un paradigma de programación en el cual el flujo de ejecución del programa se basa en la ocurrencia de eventos. Un evento es cualquier suceso que ocurra en el sistema, como un clic del ratón, una pulsación de tecla, la recepción de un mensaje, una señal de temporizador, etc.</p>
+                <p>En la POE, se definen los eventos que pueden ocurrir en el sistema y se especifica cómo el programa debe responder a cada uno de ellos. En lugar de tener un flujo de ejecución lineal y predecible, como en la programación estructurada, la POE permite que el programa responda de forma dinámica a los eventos que ocurran.</p>
+                <p>Los lenguajes de programación que admiten la POE suelen tener un modelo de ejecución basado en bucles de eventos, donde el programa espera continuamente la ocurrencia de un evento y, cuando ocurre, ejecuta una función de respuesta específica para ese evento.</p>
+                <p>La POE es ampliamente utilizada en el desarrollo de aplicaciones de usuario, interfaces gráficas de usuario (GUI), juegos, sistemas de red y dispositivos embebidos, entre otros. Ejemplos de lenguajes de programación que admiten la POE son JavaScript, Python, C#, Java, entre otros.</p>
+            </section>
+            <section>
+                <h2>Lenguajes procedimentales.</h2>
+                <p>La programación procedimental es un paradigma de programación que se centra en la creación de procedimientos o funciones que realizan tareas específicas y que se llaman desde el programa principal para realizar una tarea determinada.</p>
+                <p>En la programación procedimental, el programa se divide en una serie de procedimientos o funciones que se ejecutan secuencialmente, con la posibilidad de pasar datos entre ellas. Cada procedimiento realiza una tarea específica, y los datos de entrada y salida se definen claramente.</p>
+                <p>La programación procedimental se basa en la idea de que el programa es una serie de instrucciones que se ejecutan secuencialmente, donde cada instrucción se lleva a cabo de manera lineal. El programa principal llama a los procedimientos o funciones según sea necesario para realizar una tarea específica.</p>
+                <p>Este enfoque se utiliza comúnmente en lenguajes de programación como C, Pascal y Fortran. La programación procedimental es útil para aplicaciones en las que se requiere un alto rendimiento y control cercano del hardware, como en sistemas operativos, controladores de dispositivos, aplicaciones científicas y de ingeniería, entre otros.</p>
+                <p>A diferencia de la programación orientada a objetos, que se centra en objetos y clases, la programación procedimental se centra en procedimientos o funciones que se utilizan para realizar tareas específicas. Aunque la programación orientada a objetos se ha convertido en un enfoque más popular en la programación moderna, la programación procedimental todavía se utiliza ampliamente y es una base importante para muchos sistemas y aplicaciones.</p>
+            </section>
         </div>
+    </div>
 
-        <div class="caja">
-            
-            <div class="menu-lateral">
-                <div class="inf-title-sidemenu">
-                    <span></span>
-                </div>
-            </div>
-            
-
-            <div class="inf-container-padre">
-                <div class="inf-container">
-    
-                    <div class="inf-title">
-                        <span>Welcome!</span><br><br><br>
-                    </div>
-        
-                    <div class="inf-text">
-                        lo de la encuesta
-                            <br><br>
-                        </span>
-                    </div>
-                    <div class="container">
-                        <div class="grid">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                    <div class="tarjeta">
-                                        
-                                        <a href="encuesta2.html"><button>encuesta 1</button></a>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                    <div class="tarjeta">
-                                        
-                                        <a href="encuesta1.html"><button>encuesta 2</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div>
-          
-        </div>  
-        <script src="https://kit.fontawesome.com/22778d624a.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+    <footer>Hito individual, Programación</footer>
+    <script src="js/index.js"></script>
+</body>
 </html>
