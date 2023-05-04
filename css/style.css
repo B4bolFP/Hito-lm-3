@@ -31,14 +31,36 @@ h2 {
     align-items: center;
     margin: 1rem auto;
     border-radius: 0.3rem;
-    width: 75%;
+    width: 55%;
     background-color: #36393e;
 }
 
 .body-section-container {
-    width: 80%;
+    width: 95%;
     text-align: justify;
     text-justify: inter-word;
+    padding: 1rem;
+}
+
+.card {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1rem;
+    border: 1px solid #7289da;
+    border-radius: 1rem;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.field {
+    padding: 0.8rem;
+    border: 1px solid #7289da;
+    border-radius: 1rem;
 }
 
 footer {
