@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+	<title>Ejemplo de JavaScript Superhéroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <section>
+
+    </section>
+    <script>
+        console.log(`Intentando cargar el archivo superheroes.json...`);
+
+        fetch("superheroes.json")
+            .then(response => response.json())
+            .then(data => {
+                populateHeader(data);
+                populateHeroes(data);
+            });
+
+        function populateHeader(obj) {
+            const header = document.querySelector('header');
+            const myH1 = document.createElement('h1');
+            myH1.textContent = obj.squadName;
+            header.appendChild(myH1);
+
+            const myPara = document.createElement('p');
+            myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
+            header.appendChild(myPara);
+        }
+
+        function populateHeroes(obj) {
+            const section = document.querySelector('section');
+            const heroes = obj.members;
+
+            for (const hero of heroes) {
+                const myArticle = document.createElement('article');
+                const myH2 = document.createElement('h2');
+                const myPara1 = document.createElement('p');
+                const myPara2 = document.createElement('p');
+                const myPara3 = document.createElement('p');
+
+                myH2.textContent = hero.name;
+                myPara1.textContent = `Secret identity: ${hero.secretIdentity}`;
+                myPara2.textContent = `Age: ${hero.age}`;
+
+                const myUl = document.createElement('ul');
+                for (const power of hero.powers) {
+                    const myLi = document.createElement('li');
+                    myLi.textContent = power;
+                    myUl.appendChild(myLi);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myUl);
+
+                section.appendChild(myArticle);
+            }
+        }
+        function populate() {
+            fetch("superheroes.json")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    populateHeader(data);
+                    populateHeroes(data);
+        });
+}
+
+    </script>
+  </body>
+</html>

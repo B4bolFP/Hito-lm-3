@@ -1,0 +1,10 @@
+.tabla {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-color: #000000;
+}
