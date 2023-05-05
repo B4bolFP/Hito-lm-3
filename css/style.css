@@ -71,3 +71,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+form * {    
+    color: black;
+}
+
+form label {
+    color: #fff;
+}

@@ -15,23 +15,20 @@
 
     <div class="body-container">
         <div class="body-section-container">
+            <form>
+                <label for="filter">Mostrar: </label>
+                <select name="filter" id="filtro" onchange="aplicarFiltro()">
+                    <option value="todo">Todo</option>
+                    <option value="personal">Informacion personal</option>
+                    <option value="data">Datos relevantes</option>
+                </select>
+            </form>
+
             <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Fecha y hora</th>
-                        <th>Nombre</th>
-                        <th>Apellidos</th>
-                        <th>Centro</th>
-                        <th>Edad</th>
-                        <th>Red social preferida</th>
-                        <th>Uso principal</th>
-                        <th>Uso diario?</th>
-                        <th>Tiempo de uso</th>
-                        <th>Alternativa a las redes</th>
-                        <th>Abstenerse 1 semana de las redes</th>
-                    </tr>
+                <thead class="repositorio-thead">
+                    
                 </thead>
-                <tbody class="repositorio">
+                <tbody class="repositorio-tbody">
 
                 </tbody>
             </table>
