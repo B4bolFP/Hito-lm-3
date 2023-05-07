@@ -14,7 +14,6 @@ function aplicarFiltro() {
     .then(function(datos) {
         let out_thead = "";
         let out_tbody = "";
-        let cont = 1;
         
         if (filtro == "todo") {
             out_thead += `
@@ -51,7 +50,6 @@ function aplicarFiltro() {
                         <td>${dato.abstiencia}</td>
                     </tr>
                 `;
-            cont++;
             }
         } else if (filtro == "personal") {
             out_thead += `
@@ -74,7 +72,6 @@ function aplicarFiltro() {
                         <td>${dato.edad}</td>
                     </tr>
                 `;
-            cont++;
             }            
         } else {
             out_thead += `
@@ -105,7 +102,6 @@ function aplicarFiltro() {
                         <td>${dato.abstiencia}</td>
                     </tr>
                 `;
-            cont++;
             }
         }
         repositorio_thead.innerHTML = out_thead;
